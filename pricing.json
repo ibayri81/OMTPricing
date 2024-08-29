@@ -1,0 +1,15 @@
+{
+  "materials": [
+    { "name": "Carbon fibre", "pricePerSheet": 800 },
+    { "name": "10mm Dura-matte", "pricePerSheet": 620 },
+    { "name": "6mm Dura-matte", "pricePerSheet": 400 },
+    { "name": "10mm Acrylic", "pricePerSheet": 510 },
+    { "name": "6mm Acrylic", "pricePerSheet": 320 }
+  ],
+  "accessories": [
+    { "name": "Dimmer Switch", "price": 20 },
+    { "name": "USB Charger", "price": 15 },
+    { "name": "12V Outlet", "price": 10 },
+    { "name": "Voltmeter", "price": 25 }
+  ]
+}
