@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <label>Optional Accessories</label>
                 <div class="form-row">
                     <div class="col-md-6">
-                        <label for="dimmerSwitchQty">Dimmer Switch ($70 each)</label>
+                        <label for="dimmerSwitchQty">Dimmer Switch ($58 each)</label>
                         <input type="number" id="dimmerSwitchQty" class="form-control" min="0" value="0">
                     </div>
                     <div class="col-md-6">
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>
                 <div class="form-row mt-3">
                     <div class="col-md-6">
-                        <label for="voltmeterQty">OLED Voltmeter ($75 each)</label>
+                        <label for="voltmeterQty">OLED Voltmeter ($43 each)</label>
                         <input type="number" id="voltmeterQty" class="form-control" min="0" value="0">
                     </div>
                     <div class="col-md-6">
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <label for="connectorType">Switch Connectors</label>
                         <select id="connectorType" class="form-control">
                             <option value="50cm">50cm connector ($9)</option>
-                            <option value="120cm">120cm connector ($12)</option>
+                            <option value="120cm">120cm connector ($15)</option>
                         </select>
                     </div>
                     <div class="col-md-6">
@@ -193,9 +193,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const connectorType = document.getElementById('connectorType').value;
             const connectorQty = parseFloat(document.getElementById('connectorQty').value) || 0;
-            const connectorCost = connectorType === '50cm' ? connectorQty * 9 : connectorQty * 12;
+            const connectorCost = connectorType === '50cm' ? connectorQty * 9 : connectorQty * 15;
 
-            const accessoriesCost = (dimmerSwitchQty * 70) + (usbChargerQty * 35) + (voltmeterQty * 75) + 
+            const accessoriesCost = (dimmerSwitchQty * 58) + (usbChargerQty * 35) + (voltmeterQty * 43) + 
                                     (outlet12VQty * 22) + connectorCost;
 
             const totalCost = materialCost + digitizationCost + designCost + fabricationCost + 
@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <label>Optional Accessories</label>
                 <div class="form-row">
                     <div class="col-md-6">
-                        <label for="dimmerSwitchQty">Dimmer Switch ($70 each)</label>
+                        <label for="dimmerSwitchQty">Dimmer Switch ($58 each)</label>
                         <input type="number" id="dimmerSwitchQty" class="form-control" min="0" value="0">
                     </div>
                     <div class="col-md-6">
@@ -267,7 +267,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>
                 <div class="form-row mt-3">
                     <div class="col-md-6">
-                        <label for="voltmeterQty">OLED Voltmeter ($75 each)</label>
+                        <label for="voltmeterQty">OLED Voltmeter ($43 each)</label>
                         <input type="number" id="voltmeterQty" class="form-control" min="0" value="0">
                     </div>
                     <div class="col-md-6">
@@ -280,7 +280,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <label for="connectorType">Switch Connectors</label>
                         <select id="connectorType" class="form-control">
                             <option value="50cm">50cm connector ($9)</option>
-                            <option value="120cm">120cm connector ($12)</option>
+                            <option value="120cm">120cm connector ($15)</option>
                         </select>
                     </div>
                     <div class="col-md-6">
@@ -336,9 +336,9 @@ document.addEventListener('DOMContentLoaded', function () {
             const connectorQty = parseFloat(document.getElementById('connectorQty').value) || 0;
             const connectorCost = connectorType === '50cm' ? connectorQty * 9 : connectorQty * 12; // $9 for 50cm, $12 for 120cm
 
-            const accessoriesCost = (dimmerSwitchQty * 70) + // $70 per dimmer switch
+            const accessoriesCost = (dimmerSwitchQty * 58) + // $70 per dimmer switch
                                     (usbChargerQty * 35) + // $35 per USB charger
-                                    (voltmeterQty * 75) +  // $75 per OLED voltmeter
+                                    (voltmeterQty * 43) +  // $75 per OLED voltmeter
                                     (outlet12VQty * 22) +  // $22 per 12V outlet
                                     connectorCost;           // Cost of switch connectors
 
@@ -352,3 +352,4 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
