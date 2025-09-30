@@ -71,16 +71,16 @@ document.addEventListener('DOMContentLoaded', function () {
                     <label for="edgeFinishing">Edge Finishing</label>
                     <select id="edgeFinishing" class="form-control">
                         <option value="straight">Straight ($0)</option>
-                        <option value="bevelled & hand polished">Bevelled & hand polished ($120)</option>
+                        <option value="bevelled & hand polished">Bevelled & hand polished ($0)</option>
                     </select>
                 </div>
             </div>
             <div class="form-row">
-                <div class="form-group col-md-12">
+                <div class="form-group col-md-">
                     <label for="backlighting">Panel Backlighting</label>
                     <select id="backlighting" class="form-control">
                         <option value="none">None ($0)</option>
-                        <option value="single">Single strip ($120)</option>
+                        <option value="single">Single strip ($0)</option>
                         <option value="double">Double strip ($160)</option>
                         <option value="multiple">Multiple ($190)</option>
                     </select>
@@ -336,9 +336,9 @@ document.addEventListener('DOMContentLoaded', function () {
             const connectorQty = parseFloat(document.getElementById('connectorQty').value) || 0;
             const connectorCost = connectorType === '50cm' ? connectorQty * 9 : connectorQty * 15; // $9 for 50cm, $15 for 120cm
 
-            const accessoriesCost = (dimmerSwitchQty * 58) + // $70 per dimmer switch
+            const accessoriesCost = (dimmerSwitchQty * 58) + // $58 per dimmer switch
                                     (usbChargerQty * 35) + // $35 per USB charger
-                                    (voltmeterQty * 43) +  // $75 per OLED voltmeter
+                                    (voltmeterQty * 43) +  // $43 per OLED voltmeter
                                     (outlet12VQty * 22) +  // $22 per 12V outlet
                                     connectorCost;           // Cost of switch connectors
 
@@ -352,6 +352,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
 
 
 
