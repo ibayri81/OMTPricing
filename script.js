@@ -334,7 +334,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const connectorType = document.getElementById('connectorType').value;
             const connectorQty = parseFloat(document.getElementById('connectorQty').value) || 0;
-            const connectorCost = connectorType === '50cm' ? connectorQty * 9 : connectorQty * 15; // $9 for 50cm, $12 for 120cm
+            const connectorCost = connectorType === '50cm' ? connectorQty * 9 : connectorQty * 15; // $9 for 50cm, $15 for 120cm
 
             const accessoriesCost = (dimmerSwitchQty * 58) + // $70 per dimmer switch
                                     (usbChargerQty * 35) + // $35 per USB charger
@@ -352,5 +352,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
 
 
