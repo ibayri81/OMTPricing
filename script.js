@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <label for="edgeFinishing">Edge Finishing</label>
                     <select id="edgeFinishing" class="form-control">
                         <option value="straight">Straight ($0)</option>
-                        <option value="bevelled & hand polished">Bevelled & hand polished ($0)</option>
+                        <option value="bevelled & hand polished">Bevelled & hand polished ($120)</option>
                     </select>
                 </div>
             </div>
@@ -352,6 +352,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
 
 
 
